@@ -1,0 +1,215 @@
+body {
+  min-height: 100vh;
+  background-color: #f1f1f1;
+}
+
+/* .excel-panel {
+  padding-left: 40px;
+} */
+
+.top-side {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 10px;
+  width: 500px;
+  border-radius: 8px;
+  border: #cccccc solid 2px;
+  background-color: #fff;
+}
+
+.nombre {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.excelNombre {
+  font-weight: 600;
+  color: #3d3d3d;
+  font-size: 16px;
+}
+
+.button-panel {
+  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type='file'] {
+  display: none;
+}
+
+.label-button {
+  display: flex;
+  align-items: baseline;
+  -webkit-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  border: 2px solid #0f172a;
+  box-shadow: 2px 2px 0 0 white, 4px 4px 0 0 #0f172a;
+  transition: 200ms;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  font-weight: 600;
+
+  /* box-shadow: 5px 15px 25px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  color: #fff;
+  background-color: #2b91c0; */
+}
+
+.label-button:hover {
+  box-shadow: 3px 3px white, 6px 6px 0 0 #0f172a;
+  transform: translate(-2px, -2px);
+}
+.label-2nd-button {
+  background-color: rgb(211, 237, 252);
+}
+
+label svg {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.label-button:active {
+  transform: scale(0.9);
+}
+
+.button-no-show {
+  display: none;
+}
+h1 {
+  margin: 5px;
+  font-weight: 600;
+}
+
+p {
+  margin: 5px;
+}
+h2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  margin: 5px;
+  font-weight: 600;
+}
+/* TABLE */
+table {
+  width: 100%;
+}
+
+table,
+th,
+td {
+  padding: 10px;
+  border-collapse: collapse;
+}
+th {
+  font-size: small;
+}
+
+td {
+  font-size: 0.75rem;
+}
+
+thead th {
+  position: sticky;
+  top: -1px;
+  background: rgb(0, 7, 61);
+  color: white;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #0000000b;
+}
+tbody tr:hover {
+  background-color: rgba(167, 164, 221, 0.4);
+}
+
+.tableWrapper {
+  width: 95vw;
+  height: 73vh;
+  background-color: #fff;
+  border-radius: 10px;
+  -webkit-backdrop-filter: blur(7px);
+  backdrop-filter: blur(7px);
+  box-shadow: 0 0.4rem 0.8rem #0005;
+  overflow: auto;
+}
+
+.tableWrapper::-webkit-scrollbar {
+  width: 0.7rem;
+  height: 0.5rem;
+}
+
+.tableWrapper::-webkit-scrollbar-thumb {
+  border-radius: 0.5rem;
+  background-color: #0004;
+  visibility: hidden;
+}
+
+.tableWrapper:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
+
+/* TABLAS DE DATOS */
+.upper-side {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 7px 10px 0;
+}
+
+.enlaces {
+  background-color: white;
+  text-decoration: none;
+  text-decoration-color: none;
+}
+
+@media (max-width: 1600px) {
+  td:not(:first-of-type) {
+    min-width: 15.1rem;
+  }
+  .description {
+    min-width: 40rem;
+  }
+
+  .top-side {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: baseline;
+    padding: 10px;
+    gap: 10px;
+    width: 1100px;
+  }
+
+  .button-panel {
+    gap: 10px;
+  }
+  .label-button {
+    display: flex;
+    letter-spacing: 1.5px;
+    -webkit-user-select: none;
+    user-select: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 10px;
+    padding: 10px 15px;
+    box-shadow: 2px 2px 0 0 white, 4px 4px 0 0 #0f172a;
+    transition: 200ms;
+    cursor: pointer;
+    background-color: #f1f1f1;
+    font-weight: 600;
+  }
+  .label-2nd-button {
+    background-color: rgb(211, 237, 252);
+    box-shadow: 2px 2px 0 0 white, 4px 4px 0 0 #0f172a;
+  }
+}

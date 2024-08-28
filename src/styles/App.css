@@ -1,0 +1,158 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* TABLE */
+
+.TableBody {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.botones-wrapper {
+  width: 9vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.table-button {
+  display: inline-block;
+  -webkit-user-select: none;
+  user-select: none;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px 8px;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  border: 2px solid #0f172a;
+  box-shadow: 2px 2px 0 0 white, 4px 4px 0 0 #0f172a;
+  transition: 200ms;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  font-weight: 600;
+}
+
+.titulo {
+  font-size: 2rem;
+}
+
+.titulo2 {
+  font-size: 1.5rem;
+}
+
+.space {
+  padding: 15px;
+}
+
+.erase {
+  color: white;
+  background-color: rgb(116, 0, 0);
+}
+.table-button:hover {
+  box-shadow: 3px 3px white, 6px 6px 0 0 #0f172a;
+  transform: translate(-2px, -2px);
+}
+
+.form-wrapper {
+  width: 95vw;
+  height: 80vh;
+}
+
+.input-wrapper {
+  width: 100%;
+  /* background-color: #7b0000ab; */
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.inputField {
+  width: 1000px;
+  margin: 20px;
+}
+
+.submit-btn {
+  background: #006c78;
+  padding: 8px 22px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:active {
+  transform: scale(0.92);
+}
+
+.submit-btn:hover {
+  box-shadow: 0 0 3px #006c78b7, 0 0 5px #006c78b7, 0 0 10px #006c78b7,
+    0 0 20px #006c78b7, 0 0 100px #006c78b7;
+}
+
+.return-btn {
+  background: #780000;
+  padding: 8px 22px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.return-btn:active {
+  transform: scale(0.92);
+}
+
+.return-btn:hover {
+  box-shadow: 0 0 3px #7800009f, 0 0 5px #7800009f, 0 0 10px #7800009f,
+    0 0 20px #7800009f, 0 0 100px #7800009f;
+}
