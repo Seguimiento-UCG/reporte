@@ -31,11 +31,12 @@ const MostrarDatos = () => {
 
   const handleDeleteRemitente = (id) => {
     const confirm = window.confirm('Esta Seguro de Eliminarlo?');
+    var thisPage = Location;
     if (confirm) {
       axios
         .delete('https://autorrelleno-excel.onrender.com/remitente/' + id)
         .then((res) => {
-          location.reload();
+          thisPage.reload();
         })
         .catch((err) => console.log(err));
     }
